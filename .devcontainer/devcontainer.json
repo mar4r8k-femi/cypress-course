@@ -1,0 +1,19 @@
+{
+    "name": "Node.js Development Container",
+    "image": "node:latest",
+    "features": {},
+    "forwardPorts": [3000],
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "esbenp.prettier-vscode"
+        ],
+        "settings": {
+          "editor.formatOnSave": true
+        }
+      }
+    },
+    "postCreateCommand": "npm install",
+    "remoteUser": "node"
+  }
